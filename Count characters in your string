@@ -1,0 +1,11 @@
+function count (string) {  
+    let objekt = {};
+    string.split('').forEach(element => {
+        if (objekt[element]) {
+            objekt[element]++;
+        } else {
+            objekt[element] = 1;
+        }
+    });;
+     return {objekt};
+  }
