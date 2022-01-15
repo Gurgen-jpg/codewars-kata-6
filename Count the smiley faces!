@@ -1,0 +1,12 @@
+function countSmileys(arr) {
+    let validSmile = [":)",";)",":-)",";-)",":~)",";~)",":D",";D",":-D",";-D",":~D",";~D"];
+    let count = 0;
+    let a = arr.map(function(elem) {
+        validSmile.map(function(nelem) {
+            if (elem.includes(nelem)) {
+                count++;
+            }
+        })
+    })
+    return (a.length > 0) ? count : 0;
+}
