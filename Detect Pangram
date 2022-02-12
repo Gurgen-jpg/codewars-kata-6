@@ -1,0 +1,9 @@
+function isPangram(str) {
+    let temp = str.replace(/\s/g, '').toLowerCase().split('');
+    let state = [...Array(26)].map((a,b)=> String.fromCharCode(b+97)).join('') //generation Alphabet
+    let result = true;
+    for (let i = 0; i < state.length; i++) {
+        if (temp.indexOf(state[i]) === -1) {return (!result)}      
+        }
+  return result
+}
