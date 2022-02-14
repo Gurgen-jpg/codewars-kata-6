@@ -1,0 +1,4 @@
+function deleteNth(arr, x) {
+    let totals = {};
+    return arr.filter(el => (totals[el] = (totals[el]+1) || 0) < x);
+  }
